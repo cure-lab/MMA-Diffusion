@@ -47,5 +47,16 @@ If you like or use our work please cite us:
       booktitle={Proceedings of the {IEEE} Conference on Computer Vision and Pattern Recognition ({CVPR})},
 }
 ```
+## Credit
 
+We adopt the following open-sourced projects:
+
+- [photoguard](https://github.com/mit-han-lab/bevfusion)
+- [gcg](https://github.com/huggingface/diffusers)
+- [diffusers](https://github.com/huggingface/diffusers)
+- [unsafe latent diffusion](https://github.com/huggingface/diffuser)
+
+## More Visualization
+
+![image_vis](./images/vis.png)
 
