@@ -165,7 +165,7 @@ class SDattack(object):
   def __init__(self,
                model,
                tokenizer, 
-               control_init='! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !',
+               control_init='N q V w Y S V P H b D X p P d k h x E p',
                manager=None,
                target_embeddings=None,
                *args, **kwargs
@@ -297,7 +297,7 @@ class SDattack(object):
 def main(args):
   params = ConfigDict()
   params.batch_size = 512
-  params.control_init = '! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !'.replace('!','=')
+  params.control_init = 'N q V w Y S V P H b D X p P d k h x E p'
   params.filter_cand = True
   params.gbda_deterministic = True
   params.n_steps = args.iteration
@@ -314,7 +314,7 @@ def main(args):
 
   device = "cuda" if torch.cuda.is_available() else "cpu"
   pipe_inpaint = StableDiffusionInpaintPipeline.from_pretrained(
-         "/u01/yangyijun/data/safe_text_diffusion/safe_diffusion/dataloaders/stable-diffusion-inpainting",
+         "/your-checkpoint-path/stable-diffusion-inpainting",
       ).to(device)
 
   model = pipe_inpaint.text_encoder 
