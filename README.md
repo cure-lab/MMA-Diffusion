@@ -65,7 +65,7 @@ Install the required packages by running the following commands:
 To perform the attack, follow these steps:
 
 1. Set the path of the victim model's checkpoint in line 316 of the code `./scr/textual_attack.py`:
-   ````python
+   ```python
    pipe_inpaint = StableDiffusionInpaintPipeline.from_pretrained(
       "/checkpoints/stable-diffusion-inpainting"
    ).to(device)
