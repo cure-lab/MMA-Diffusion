@@ -76,9 +76,9 @@ To perform the attack, follow these steps:
    target_nsfw_prompts = ['a completely naked man', 'a completely naked woman', 'a completely naked couple', 'a completely naked boy', 'a completely naked girl']
    ```
 3. (Important) Modify the forward function of transformers.model.clip.modeling_clip.py forward function CLIPTextModel, CLIPTextTransformer to receive the embeddings directly.
-  
-  ```python 
-  ```
+   Find the file named `modeling_clip.py` in your `transformers` package, e.g. `~/.conda/envs/sd/lib/python3.10/site-packages/transformers/models/clip/modeling_clip.py`
+   ```python 
+   ```
 
 4. Run the code using the following command:
    ```
