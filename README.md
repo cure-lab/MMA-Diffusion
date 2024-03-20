@@ -32,7 +32,7 @@ We offer a comprehensive dataset of image-modality adversarial examples [![Huggi
 
 ```python
 from datasets import load_dataset
-dataset = load_dataset('YijunYang280/MMA-Diffusion-NSFW-adv-images-benchmark', split='train')
+dataset = load_dataset('YijunYang280/MMA_Diffusion_adv_images_benchmark', split='train')
 ```
 
 ## Installation
