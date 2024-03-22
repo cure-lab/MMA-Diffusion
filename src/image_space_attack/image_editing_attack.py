@@ -28,12 +28,12 @@ to_pil = T.ToPILImage()
 from diffusers.pipelines.stable_diffusion import StableDiffusionSafetyChecker
 
 pipe_inpaint = StableDiffusionInpaintPipeline.from_pretrained(
-    "/u01/yangyijun/data/stable-diffusion-inpainting",
+    "/u01/yangyijun/data/stable-diffusion-inpainting", # put your model path here
     revision="fp16",
     torch_dtype=torch.float16,
 )
 pipe_inpaint = pipe_inpaint.to("cuda")
-safety_checker = torch.load("safety_checker.pt")
+safety_checker = torch.load("safety_checker.pt") # please download the "safety_checker.pt" from the hugging_face page listed in README.md
 feature_extractor = torch.load("feature_extractor.pt")
 special_care_embeds = torch.load("special_care_embeds.pt")
 special_care_embeds_weights = torch.load("special_care_weights.pt") #! threshold
@@ -510,12 +510,12 @@ def main(args):
 if __name__=="__main__":
   parser = argparse.ArgumentParser(description="args for SD attack")
   parser.add_argument("--iter", type=int, required=True, default=20)
-  parser.add_argument("--accumulate", type=int, default=10)
+  parser.add_argument("--accumulate", type=int, default=8)
   parser.add_argument("--epsl2", type=float, required=True, default=16.0)
   parser.add_argument("--epslinf", type=float, default=16/255)
   parser.add_argument("--adjustment", type=float, default=0.07)
-  parser.add_argument("--save_path", type=str, default="./for_fun/")
-  parser.add_argument("--input_path", type=str, default="../midjouney_image_mask_pairs_dataset/")
+  parser.add_argument("--save_path", type=str, default="./your_path/")
+  parser.add_argument("--input_path", type=str, default="../your_path_image_mask_pairs_dataset/")
   parser.add_argument('-i',"--inference", action="store_false")
   parser.add_argument("--l2", action="store_true")
   parser.add_argument('-s','--random_seed',type=int, required=True)
