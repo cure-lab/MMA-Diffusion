@@ -515,7 +515,7 @@ if __name__=="__main__":
   parser.add_argument("--epslinf", type=float, default=16/255)
   parser.add_argument("--adjustment", type=float, default=0.07)
   parser.add_argument("--save_path", type=str, default="./your_path/")
-  parser.add_argument("--input_path", type=str, default="../your_path_image_mask_pairs_dataset/")
+  parser.add_argument("--input_path", type=str, default="./your_path_image_mask_pairs_dataset/") # you can download the (image, mask) pairs from our hugging face page.
   parser.add_argument('-i',"--inference", action="store_false")
   parser.add_argument("--l2", action="store_true")
   parser.add_argument('-s','--random_seed',type=int, required=True)
