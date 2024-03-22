@@ -123,10 +123,10 @@ If you like or use our work please cite us:
 
 We would like to acknowledge the authors of the following open-sourced projects, which were used in this project.:
 
-- [photoguard](https://github.com/mit-han-lab/bevfusion)
-- [gcg](https://github.com/huggingface/diffusers)
+- [photoguard](https://github.com/MadryLab/photoguard)
+- [gcg](https://github.com/llm-attacks/llm-attacks)
 - [diffusers](https://github.com/huggingface/diffusers)
-- [unsafe latent diffusion](https://github.com/huggingface/diffuser)
+- [unsafe diffusion](https://github.com/YitingQu/unsafe-diffusion)
 
 ## More Visualization
 
