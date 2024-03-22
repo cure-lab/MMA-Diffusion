@@ -28,7 +28,7 @@ dataset = load_dataset('YijunYang280/MMA-Diffusion-NSFW-adv-prompts-benchmark', 
 
 ### NSFW adv images benchmark (Image-modality)
  
-We offer a comprehensive dataset of image-modality adversarial examples [![Huggingface Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/datasets/YijunYang280/MMA-Diffusion-NSFW-adv-images-benchmark), alongside their corresponding original images, as utilized in our evaluation benchmarks. This dataset is intended to streamline subsequent assessments and research in developing defense mechanisms against NSFW adversarial attacks (subject to access request approval).
+We offer a comprehensive dataset of image-modality adversarial examples [![Huggingface Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/datasets/YijunYang280/MMA_Diffusion_adv_images_benchmark), alongside their corresponding original images, as utilized in our evaluation benchmarks. This dataset is intended to streamline subsequent assessments and research in developing defense mechanisms against NSFW adversarial attacks (subject to access request approval).
 
 ```python
 from datasets import load_dataset
@@ -98,7 +98,7 @@ The code will automatically print the obtained optimal adversarial prompts. We p
 
 # Image space attack
 
-1. download `safety_checker.pt` from [![Huggingface Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/datasets/YijunYang280/MMA_Diffusion_NSFW_adv_images_benchmark)
+1. download `safety_checker.pt` from [![Huggingface Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/datasets/YijunYang280/MMA_Diffusion_adv_images_benchmark)
 
 2. Run the code using the following command:
    ```python
