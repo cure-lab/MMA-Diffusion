@@ -62,7 +62,7 @@ Install the required packages by running the following commands:
    ```
 ## Usage
 
-# Textual_attack
+### Text-modality attack
 
 To perform the attack, follow these steps:
 
@@ -96,7 +96,7 @@ To perform the attack, follow these steps:
 
 The code will automatically print the obtained optimal adversarial prompts. We provide an exemplified log file for your reference `./src/example_textual_attack_logfile.log`
 
-# Image space attack
+### Image-modality attack
 
 1. download `safety_checker.pt` from [![Huggingface Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/datasets/YijunYang280/MMA_Diffusion_adv_images_benchmark)
 
@@ -121,7 +121,7 @@ If you like or use our work please cite us:
 ```
 ## Acknowledge
 
-We would like to acknowledge the authors of the following open-sourced projects, which were used in this project.:
+We would like to acknowledge the authors of the following open-sourced projects, which were used in this project:
 
 - [photoguard](https://github.com/MadryLab/photoguard)
 - [gcg](https://github.com/llm-attacks/llm-attacks)
