@@ -62,6 +62,8 @@ Install the required packages by running the following commands:
    ```
 ## Usage
 
+# Textual_attack
+
 To perform the attack, follow these steps:
 
 1. Set the path of the victim model's checkpoint in line 316 of the code `./scr/textual_attack.py`:
@@ -92,8 +94,19 @@ To perform the attack, follow these steps:
    - The `-i` flag refers to the number of optimization iterations (typically larger than 500).
    - The `-n` flag indicates the number of adversarial prompts per target prompt.
 
-The code will automatically print the obtained optimal adversarial prompts. We provide an exemplified log file for your reference `./src/.log`
+The code will automatically print the obtained optimal adversarial prompts. We provide an exemplified log file for your reference `./src/example_textual_attack_logfile.log`
 
+# Image space attack
+
+1. download `safety_checker.pt` from [![Huggingface Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/datasets/YijunYang280/MMA-Diffusion-NSFW-adv-images-benchmark)
+
+2. Run the code using the following command:
+   ```python
+   cd src/image_space_attack
+   python image_editing_attack.py --iter 20 --epsl2 16.0 -s 3 -n 8
+   ```
+  We have provided a sample log file for your reference at  `./src/image_space_attack/image_space_attack_example_log.log `
+   
 ## <span style="color: #FFA500;">Citation</span>
 
 If you like or use our work please cite us:
