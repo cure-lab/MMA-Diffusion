@@ -1,7 +1,7 @@
 # <p style="color: #FFD700;">MMA-Diffusion</p>
 Official implementation of the paper: [**MMA-Diffusion: MultiModal Attack on Diffusion Models (CVPR 2024)**](https://arxiv.org/abs/2311.17516)
 
-![arXiv](https://img.shields.io/badge/arXiv-2311.17516-b31b1b.svg?style=plastic)
+[![arXiv](https://img.shields.io/badge/arXiv-2311.17516-b31b1b.svg?style=plastic)](https://arxiv.org/abs/2311.17516)
 
 > MMA-Diffusion: MultiModal Attack on Diffusion Models <br>
 > [Yijun Yang](https://yangyijune.github.io/), [Ruiyuan Gao](https://gaoruiyuan.com/), [Xiaosen Wang](https://xiaosenwang.com/), [Tsung-Yi Ho](https://tsungyiho.github.io/), [Nan Xu](https://xunan0812.github.io/), [Qiang Xu](https://cure-lab.github.io/)<sup>^</sup><br>
@@ -28,7 +28,7 @@ dataset = load_dataset('YijunYang280/MMA-Diffusion-NSFW-adv-prompts-benchmark', 
 
 ### NSFW adv images benchmark (Image-modality)
  
-We offer a comprehensive dataset of image-modality adversarial examples [![Huggingface Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/datasets/YijunYang280/MMA_Diffusion_adv_images_benchmark), alongside their corresponding original images, as utilized in our evaluation benchmarks. This dataset is intended to streamline subsequent assessments and research in developing defense mechanisms against NSFW adversarial attacks (subject to access request approval).
+We offer a comprehensive dataset of image-modality adversarial images [![Huggingface Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/datasets/YijunYang280/MMA_Diffusion_adv_images_benchmark), alongside their corresponding original images, as utilized in our evaluation benchmarks. This dataset is intended to streamline subsequent assessments and research in developing defense mechanisms against NSFW adversarial attacks (subject to access request approval).
 
 ```python
 from datasets import load_dataset
