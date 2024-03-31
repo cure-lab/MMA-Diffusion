@@ -4,8 +4,7 @@ Official implementation of the paper: [**MMA-Diffusion: MultiModal Attack on Dif
 [![arXiv](https://img.shields.io/badge/arXiv-2311.17516-b31b1b.svg?style=plastic)](https://arxiv.org/abs/2311.17516)
 
 > MMA-Diffusion: MultiModal Attack on Diffusion Models <br>
-> [Yijun Yang](https://yangyijune.github.io/), [Ruiyuan Gao](https://gaoruiyuan.com/), [Xiaosen Wang](https://xiaosenwang.com/), [Tsung-Yi Ho](https://tsungyiho.github.io/), [Nan Xu](https://xunan0812.github.io/), [Qiang Xu](https://cure-lab.github.io/)<sup>^</sup><br>
-> <sup>^</sup>Corresponding Author
+> [Yijun Yang](https://yangyijune.github.io/), [Ruiyuan Gao](https://gaoruiyuan.com/), [Xiaosen Wang](https://xiaosenwang.com/), [Tsung-Yi Ho](https://tsungyiho.github.io/), [Nan Xu](https://xunan0812.github.io/), [Qiang Xu](https://cure-lab.github.io/)
 
 
 ## Abstract
