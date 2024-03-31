@@ -363,16 +363,16 @@ def main(args):
     label_ind = labels[ind]
     prompt = prompt_list[label_ind]
     print(f"attack image id: {ind}, prompt: {prompt}")
-    mask_name = args.input_path+str(ind)+"_mask.pt"
-    multi_mask = torch.load(mask_name) #[N, 1, H, W]
-    add_mask = multi_mask.sum(dim=0) # [1, ]
-    mask = (add_mask.float() > 0).float()
+    # mask_name = args.input_path+str(ind)+"_mask.pt"
+    # multi_mask = torch.load(mask_name) #[N, 1, H, W]
+    # add_mask = multi_mask.sum(dim=0) # [1, ]
+    # mask = (add_mask.float() > 0).float()
     mask_name_png = mask_name[:-3]+".png"
-    torchvision.utils.save_image(mask, mask_name_png)
+    # torchvision.utils.save_image(mask, mask_name_png)
     mask = cv2.imread(mask_name_png, 0)  # Load the mask (0 for grayscale)
-    processed_mask = denoise_and_dilate(mask, kernel_size=5)
+    # processed_mask = denoise_and_dilate(mask, kernel_size=5)
     mask_name_png_pro = mask_name[:-3]+'processed_mask.png'
-    cv2.imwrite(mask_name_png_pro, processed_mask)  # Save the processed mask
+    # cv2.imwrite(mask_name_png_pro, processed_mask)  # Save the processed mask
     
     image_name = args.input_path + str(ind) + ".png"
     init_image = Image.open(image_name).convert('RGB').resize((512,512))
