@@ -105,6 +105,12 @@ The code will automatically print the obtained optimal adversarial prompts. We p
    python image_editing_attack.py --iter 20 --epsl2 16.0 -s 3 -n 8
    ```
   We have provided a sample log file for your reference at  `./src/image_space_attack/image_space_attack_example_log.log `
+
+> ### Tips: Troubleshooting Out-of-Memory Issues
+> If you encounter out-of-memory errors, we recommend checking the data type of the SD checkpoint first, which should be `dtype=torch.float16`. If the issue persists, consider reducing the batch size by decreasing the `-n` parameter (the default value is 8).
+> A single `RTX4090 (24GB)` should be ok to perform our attack. 
+
+
    
 ## <span style="color: #FFA500;">Citation</span>
 
