@@ -519,7 +519,8 @@ if __name__=="__main__":
   parser.add_argument('-i',"--inference", action="store_false")
   parser.add_argument("--l2", action="store_true")
   parser.add_argument('-s','--random_seed',type=int, required=True)
-  parser.add_argument('-n', "--num_inference_steps", type=int, required=True)
+  parser.add_argument('-n', "--num_inference_steps", type=int, required=True) # Troubleshooting Out-of-Memory Issues
+                                                                              # If you encounter out-of-memory errors, we recommend checking the data type of the SD checkpoint first, which should be `dtype=torch.float16`. If the issue persists, consider reducing the batch size by decreasing the `-n` parameter (the default value is 8).
   args = parser.parse_args()
   print(args)
  
