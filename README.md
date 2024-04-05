@@ -43,8 +43,12 @@ Install the required packages by running the following commands:
    pip install diffusers
    pip install datasets 
    ```
+   or create the environment from ours:
+   ```bash
+   conda env create -f mma_diffusion_environment.yml
+   ```
    
-2. Download the necessary T2I models, follow these codes:
+3. Download the necessary T2I models, follow these codes:
    ```bash
    mkdir checkpoints
    cd checkpoints
