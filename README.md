@@ -127,7 +127,7 @@ The code will automatically print the obtained optimal adversarial prompts. We p
    
 ## <span style="color: #FFA500;">Citation</span>
 
-If you like or use our work please cite us:
+If you like or use our work, please cite us:
 
 ```python
 @inproceedings{yang2024mmadiffusion,
@@ -137,6 +137,20 @@ If you like or use our work please cite us:
       booktitle={Proceedings of the {IEEE} Conference on Computer Vision and Pattern Recognition ({CVPR})},
 }
 ```
+
+and we also recommend that you read and cite our defensive framework:
+
+```python
+@inproceedings{yang2024guardt2i,
+  title     = {GuardT2I: Defending Text-to-Image Models from Adversarial Prompts},
+  author    = {Yijun Yang and  Ruiyuan Gao and Xiao Yang and Jianyuan Zong and Qiang Xu},
+  booktitle = {Advances in Neural Information Processing Systems ({NeurIPS})},
+  volume    = {37},
+  year      = {2024},
+  url       = {https://arxiv.org/abs/2403.01446},
+}
+```
+
 ## Acknowledge
 
 We would like to acknowledge the authors of the following open-sourced projects, which were used in this project:
