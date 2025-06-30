@@ -55,7 +55,7 @@ Install the required packages by running the following commands:
    mkdir checkpoints
    cd checkpoints
    git-lfs install
-   git clone https://huggingface.co/runwayml/stable-diffusion-inpainting
+   git clone https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-inpainting
    ```
    
    ```python
