@@ -109,7 +109,7 @@ The code will automatically print the obtained optimal adversarial prompts. We p
 3.  Run the code using the following command:
    ```python
    cd src/image_space_attack
-   python image_editing_attack.py --iter 20 --epsl2 16.0 -s 3 -n 8
+   python image_editing_attack.py --iter 20 --epsl2 16.0 -s 3 -n 8 --input_path ./MMA-Diffusion/mma_diffusion_images/ --save_path ./MMA-Diffusion/output/
    ```
   We have provided a sample log file for your reference at  `./src/image_space_attack/image_space_attack_example_log.log `
   > ### Note:
