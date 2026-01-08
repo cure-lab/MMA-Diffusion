@@ -363,7 +363,7 @@ def main(args):
     label_ind = labels[ind]
     prompt = prompt_list[label_ind]
     print(f"attack image id: {ind}, prompt: {prompt}")
-    # mask_name = args.input_path+str(ind)+"_mask.pt"
+    mask_name = args.input_path+str(ind)+"_mask.pt"
     # multi_mask = torch.load(mask_name) #[N, 1, H, W]
     # add_mask = multi_mask.sum(dim=0) # [1, ]
     # mask = (add_mask.float() > 0).float()
