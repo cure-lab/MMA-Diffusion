@@ -105,7 +105,8 @@ The code will automatically print the obtained optimal adversarial prompts. We p
 
 1. download `safety_checker.pt` from [![Huggingface Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/datasets/YijunYang280/MMA_Diffusion_adv_images_benchmark)
 
-2. Run the code using the following command:
+2. download images and corresponding masks from https://huggingface.co/datasets/YijunYang280/MMA_Diffusion_adv_images_benchmark/resolve/main/mma_diffusion_images.zip
+3.  Run the code using the following command:
    ```python
    cd src/image_space_attack
    python image_editing_attack.py --iter 20 --epsl2 16.0 -s 3 -n 8
