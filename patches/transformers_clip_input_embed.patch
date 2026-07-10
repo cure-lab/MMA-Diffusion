@@ -1,0 +1,28 @@
+--- transformers/models/clip/modeling_clip.py
++++ transformers/models/clip/modeling_clip.py
+@@ -590,0 +591,2 @@
++        input_embed: Optional[torch.FloatTensor] = None,
++        return_dict: Optional[bool] = None,
+@@ -595,0 +598 @@
++        return_dict = return_dict if return_dict is not None else self.config.use_return_dict
+@@ -604 +607,3 @@
+-
++        if input_embed is not None:
++            hidden_states = input_embed
++
+@@ -686,0 +692 @@
++        input_embed: Optional[torch.FloatTensor] = None,
+@@ -688 +694,2 @@
+-        output_hidden_states: Optional[bool] = None,
++        output_hidden_states: Optional[bool] = None,
++        return_dict: Optional[bool] = None,
+@@ -704,0 +712 @@
++        return_dict = return_dict if return_dict is not None else self.config.use_return_dict
+@@ -709,0 +718 @@
++            input_embed=input_embed,
+@@ -711,0 +721 @@
++            return_dict=return_dict,
+@@ -1058,0 +1069 @@
++        input_embed: Optional[torch.FloatTensor] = None,
+@@ -1082,0 +1094 @@
++            input_embed=input_embed,

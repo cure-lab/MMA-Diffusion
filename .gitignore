@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+
+# Local experiment logs
+swanlog/
+**/swanlog/
+src_sd3-5/stable-diffusion-3.5-medium/
+src_sd3-5/stable-diffusion-v1-5/
+**/text_space_attack/data/ParallelMMA/target_*_tmp.pt
+
+# Files and model variants not included in this GitHub upload
+command.md
+mma-diffusion-nsfw-adv-prompts*.csv
+readme.html
+src_flux/
+src_qwen/
+src_sd1-5/
+src_z/
+
+# Common local/runtime artifacts
+.DS_Store
+.vscode/
+*.log
